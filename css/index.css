@@ -1,7 +1,33 @@
-body{
+/* @font-face {
+  font-family: 'Playfair Display';
+  src: url('fonts/playfair-display.woff2') format('woff2'),
+       url('fonts/playfair-display.woff') format('woff'),
+       url('fonts/playfair-display.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+*{
     margin: 0;
     padding: 0;
-    color: whitesmoke;
+}
+
+body{
+    color: black;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px; /* Tamaño de fuente reducido para pantallas pequeñas */
+  }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px; /* Tamaño de fuente aún más reducido para pantallas muy pequeñas */
+  }
 }
 
 .home_background{
@@ -10,12 +36,28 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    color: whitesmoke;
     /* display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; */
     /* justify-content: center;
     align-items: center; */
+}
+
+.home_background a{
+    text-decoration: none;
+    color: rgb(49, 44, 44);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div#home_background{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+    height: 100vh;
 }
 
 header{
@@ -74,13 +116,61 @@ div.header-background{
 }
 
 .bloque0{
-    position: fixed;
+    /* position: fixed; */
     background-color: transparent;
     padding: 50px;
     text-align: left;
+    margin-top: 100px;
+    /* width: 50%; */
     /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 100px; */
+}
+
+.bloque0__title h1{
+    font-size: 64px;
+    font-weight: lighter;
+    font-family: 'Playfair Display', sans-serif;
+    text-align: left;
+    /* margin-top: 50px; */
+    margin-bottom: 32px;
+    color: rgb(221, 221, 221);
+}
+
+div.bloque0__subtitle{
+    width: auto;
+}
+
+.bloque0__subtitle p{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'montserrt', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(73, 73, 73);
+}
+
+.bloque0__button a{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(63, 63, 63);
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.bloque1{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bloque1 span{
+    font-weight: lighter;
+    color: rgb(35, 35, 35);
+    font-size: 56px;
+    font-family: 'Playfair Display', sans-serif;
 }
