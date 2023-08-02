@@ -146,7 +146,7 @@ div.bloque0__subtitle{
 .bloque0__subtitle p{
     font-weight: bold;
     font-size: 16px;
-    font-family: 'montserrt', sans-serif;
+    font-family: 'Montserrt', sans-serif;
     margin-top: 15px;
     margin-bottom: 15px;
     color: rgb(73, 73, 73);
@@ -163,9 +163,19 @@ div.bloque0__subtitle{
     border-radius: 10px;
 }
 
+.bloque0__button a:hover{
+    background-color: rgb(121, 121, 121);
+    color: whitesmoke;
+}
+
 .bloque1{
     margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
+}
+
+.bloque1__title{
+    margin-bottom: 50px;
 }
 
 .bloque1 span{
@@ -173,4 +183,78 @@ div.bloque0__subtitle{
     color: rgb(35, 35, 35);
     font-size: 56px;
     font-family: 'Playfair Display', sans-serif;
+}
+
+/* contenido */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas con el mismo tamaño */
+    gap: 30px; /* Espaciado entre las imágenes */
+    margin: 0 50px 0 50px;
+}
+  
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+footer{
+    background-color: rgb(63, 63, 63);
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__column {
+    flex: 1;
+    color: white;
+    margin: 0 10px;
+}
+  
+.footer__column h3 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: lighter;
+}
+
+.footer__column p {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: lighter;
+}
+
+.footer__column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__column form {
+display: flex;
+flex-direction: column;
+align-items: left;
+}
+
+.form__field {
+    margin-bottom: 10px;
+}
+
+.footer__column input {
+    padding: 15px;
+    /* margin-right: 10px; */
+    border: none;
+    border-radius: 5px;
+}
+
+.footer__column button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(59, 59, 59);
+    border: none;
+    border-radius: 5px;
 }
