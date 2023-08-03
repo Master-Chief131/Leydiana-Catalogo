@@ -200,13 +200,13 @@ div.bloque0__subtitle{
 
 @media screen and (max-width: 768px) {
     .image-grid {
-      grid-template-columns: repeat(2, 200px); /* Dos columnas en pantallas pequeñas */
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
     }
   }
 
   @media screen and (max-width: 480px) {
     .image-grid {
-      grid-template-columns: 200px; /* Una columna en pantallas más pequeñas */
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   
