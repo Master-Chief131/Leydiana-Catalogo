@@ -49,9 +49,16 @@
                 <span>Explora nuestro<br>catálogo</span>
             </h4>
         </div>
+       <script>
+          let imagenes=document.getElementById('imagen_1');
+          imagenes.onclick=AgrandarImagen
+          function AgrandarImagen(evento){
+             imagenes.style.transform='scale(1.5)';
+          }
+       </script>
         <div class="bloque1__content">
             <div class="image-grid">
-                <img src="img/adultos/Zapatilla_1.jpg" alt="Imagen 1" class="catalogo-img">
+                <img id=¨imagen_1¨ src="img/adultos/Zapatilla_1.jpg" alt="Imagen 1" class="catalogo-img">
                 <img src="img/adultos/Zapatilla_2.jpg" alt="Imagen 2" class="catalogo-img">
                 <img src="img/adultos/Zapatilla_3.jpg" alt="Imagen 3" class="catalogo-img">
                 <img src="img/adultos/Zapatilla_4.jpg" alt="Imagen 4" class="catalogo-img">

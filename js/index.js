@@ -24,3 +24,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
+// Suspuestamente para agrandar la imagen
+// img = document.getElementById('myImg')
+// img.style.transform = 'scale(1.9)'
+
+// var images=document.querySelectorAll('.catalogo-img img');
+// images.forEach(img =>{
+//    img.addEventListener('click', function(){
+//       this.classList.toggle('en-grande');
+//    });
+// });
+
+// var boton_imagen = document.querySelector('.catalogo-img');
+// boton_imagen.onclick=function(){
+//    this.classList.toggle('en-grande');
+//    }
+
+var imagenes = document.querySelectorAll('.catalogo-img');
+imagenes.onclick=function(){
+   imagenes.style.transform= 'scale(1.5)';
+}
